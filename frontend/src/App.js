@@ -18,13 +18,10 @@ class App extends Component {
       })
     }
 
-
-
   render() {
     return (
       <div className="App">
         <QuotesCointainer quotes={this.state.quotes} />
-
       </div>
     );
   }

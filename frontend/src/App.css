@@ -1,38 +1,235 @@
+img{
+  width: 40vw;
+  height: 40vh;
+}
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.quote-2 {
+  font-family: 'Press Start 2P', cursive;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  /* background-image: url("https://i.pinimg.com/originals/e9/7b/ab/e97bab7d177c3a4807c9ae8a61c799bc.jpg"); */
+  background: darkblue;
+}
+
+.quote-2 .card {
+  color: white;
+}
+.quote-2 .button {
+  font-family: 'Press Start 2P', cursive;
+  background: darkblue;
+  color: white;
+  border: 3px solid white;
+}
+.quote-2 .button:hover {
+  color:darkblue;
+  background: white;
+}
+
+.quote-3 {
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #00807F;
+}
+.quote-3 .taskbar {
+  width: 100vw;
+  height: 28px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.quote-3 .button {
+  background: #ababab;
+  box-shadow: 2px 0 black;
+  font-weight: 900;
+}
+
+.quote-4 {
+  background-image: url("https://9to5mac.com/wp-content/uploads/sites/6/2017/07/leopard.jpg?quality=82&strip=all");
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; 
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
+}
+.quote-4 .taskbar {
+  width: 1219px;
+  height: 83px;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+}
+
+.quote-4 .button {
+  border-radius: 10px;
+  background: lightgrey;
+  box-shadow: 2px 2px black;
+  font-weight: 900;
+}
+
+.quote-5 {
+  padding: 20px;
+  width: 50vw;
+  height: 100vh;
+  font-size: 12px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.quote-5 img{
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.iphone {
+  position: relative;
+  background: #202020;
+  width: 45%;
+  height: 0;
+  padding-top: 95%;
+  margin: 0 auto;
+  border-radius: 3em;
+}
+
+.power {
+  position: absolute;
+  background: #202020;
+  width: 13%;
+  height: .5%;
+  top: -.5%;
+  right: 12%;
+  border-top-left-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.lock {
+  position: absolute;
+  background: #202020;
+  width: 1%;
+  height: 5%;
+  top: 12.5%;
+  left: -1%;
+  border-top-left-radius: .5em;
+  border-bottom-left-radius: .5em;
+}
+
+.volume {
+  position: absolute;
+  background: #202020;
+  width: 1%;
+  height: 4%;
+  top: 23%;
+  left: -1%;
+  border-top-left-radius: .5em;
+  border-bottom-left-radius: .5em;
+}
+
+.volume.down{ top: 31%; }
+
+.camera {
+  position: absolute;
+  top: 4%;
+  left: 48.5%;
+  background: #3f3f3f;
+  width: 3%;
+  height: 0;
+  padding-top: 3%;
+  border-radius: 50%;
+}
+
+.speaker {
+  position: absolute;
+  top: 7%;
+  left: 42.5%;
+  background: #3f3f3f;
+  width: 15%;
+  height: 0;
+  padding-top: 3%;
+  border-radius: 1em;
+}
+
+.appleicon {
+  padding-top: 25%;
+  opacity: 0;
+  animation: unhide 5s infinite alternate;
+}
+
+.appleicon img{
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  opacity: 0;
+  font-size: 1.25rem;
+  text-align: center;
+  animation: unhide 5s infinite alternate;
+}
+
+.screen {
+  background: #2f2f2f;
+  width: 90%;
+  height: 75%;
+  position: absolute;
+  top: 12.5%;
+  left: 5%;
+  animation: lighten 5s infinite alternate;
+}
+
+.quote-5 .button {
+  position: absolute;
+  bottom: 2.75%;
+  left: 42.5%;
+  background: #3f3f3f;
+  /* border: 1px solid #3f3f3f; */
+  width: 15%;
+  height: 0;
+  padding-top: 15%;
+  border-radius: 50%;
+}
+
+.square {
+  position: absolute;
+  top: 27.5%;
+  left: 27.5%;
+  border: 2px solid #d7d7d7;
+  border-radius: .3em;
+  width: 45%;
+  height: 45%;
+}
+
+
+.character-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+}
+
+.character-card {
+  padding: 0;
+  border: 4px solid black;
+}
+.character-card img {
+  width: 100%;
+  padding: 0;
 }
